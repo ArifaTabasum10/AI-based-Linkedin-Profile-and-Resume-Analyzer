@@ -50,31 +50,38 @@ This project was built using the following technologies:
 
 ---
 
-## 🚀 How to Run This Project Locally
+## 🚀 Get it Running
 
-Follow these steps to get the application running on your own machine.
+You can get this project running on your local machine in just a few steps.
 
-### 1. Clone the Repository
-Open your terminal and clone this project:
-```bash
-git clone [https://github.com/ArifaTabasum10/AI-Profile-Analyzer.git](https://github.com/ArifaTabasum10/AI-Profile-Analyzer.git)
-cd AI-Profile-Analyzer
-2. Install Dependencies
-It's recommended to use a virtual environment. Once you have, install all the required libraries from the requirements.txt file:
+1.  **Clone the Repository** 📂
+    
+    Open your terminal and clone the project code to your computer:
+    ```bash
+    git clone [https://github.com/ArifaTabasum10/AI-Profile-Analyzer.git](https://github.com/ArifaTabasum10/AI-Profile-Analyzer.git)
+    cd AI-Profile-Analyzer
+    ```
 
-Bash
+2.  **Install the Libraries** 📦
+    
+    This project uses a few Python libraries. Install them all at once with this command:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-pip install -r requirements.txt
-3. Download the SpaCy AI Model
-You'll need the small English model for SpaCy to perform the NLP tasks.
+3.  **Download the AI Model** 🧠
+    
+    The app's NLP features run on a SpaCy model. Download the small English model:
+    ```bash
+    python -m spacy download en_core_web_sm
+    ```
 
-Bash
+4.  **Launch the App!** 🎈
+    
+    You're all set. Run this command to launch the Streamlit app:
+    ```bash
+    streamlit run app.py
+    ```
+    Your web browser will open automatically, and you can start analyzing!
 
-python -m spacy download en_core_web_sm
-4. Run the App
-Launch the Streamlit app with this command:
-
-Bash
-
-streamlit run app.py
-The app will automatically open in your web browser.
+---
